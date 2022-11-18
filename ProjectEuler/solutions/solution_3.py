@@ -1,7 +1,7 @@
 from sympy import primefactors
 
 
-def solve_p3(n):
+def solve_p3(n: int) -> int:
     return primefactors(n)[-1]
 
 
