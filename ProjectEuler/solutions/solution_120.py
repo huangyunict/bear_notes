@@ -14,5 +14,5 @@ def solve_p120():
 
 
 if __name__ == "__main__":
-    print(calc_r_max(7)) # 42
+    print(calc_r_max(7))  # 42
     print(solve_p120())  # 333082500

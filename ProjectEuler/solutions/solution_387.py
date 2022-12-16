@@ -10,7 +10,7 @@ def calc(num: int, digits_sum: int, max_num: int) -> int:
         return result
     # Check strong right truncatable Harshad numbers.
     if isprime(num // digits_sum):
-        for last in [1,3,7,9]:
+        for last in [1, 3, 7, 9]:
             next_num = num * 10 + last
             # Check strong, right truncatable Harshad primes.
             if next_num < max_num and isprime(next_num):
@@ -30,4 +30,4 @@ def solve_p387(max_num: int) -> int:
 
 if __name__ == '__main__':
     print(solve_p387(10000))  # 90619
-    print(solve_p387(pow(10,14)))  # 696067597313468
+    print(solve_p387(pow(10, 14)))  # 696067597313468
